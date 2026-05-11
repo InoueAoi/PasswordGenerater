@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>自作ツール置き場</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div>
+     <h1>自作ツール置き場</h1>
+
+      <section>
+        <h3>ぱすわーど作るよ〜</h3>
+        <p>パスワードを作成するオプションでーす</p>
+          <form>
+            <label>
+              <input type="checkbox" class="pswd-opt">
+              <span>大文字を含む（先頭の文字が大文字になります）</span>
+            </label>
+            <label><input type="checkbox" class="pswd-opt">
+              <span>数字を含む</span>
+              <select id="NONs">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            <span>つ含む</span></label>
+            <label>
+              <input type="checkbox" class="pswd-opt">
+              <span>記号を含む</span>
+            </label>
+          </form>
+        <p>作るボタン↓  チェックした項目が反映されます。↓コピーボタン</p>
+        <select id="pswd-length">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+        </select>
+        <span>文字で</span>
+        <button id="do-create">作る</button>
+        <input id="pswd-result" type="text" maxlength="20" readonly>
+        <button id="do-copy">Copy</button>
+      </section>
+      <footer>
+        &copy;2019 井上葵
+      </footer>
+    </div>
+   <script src="script.js"></script>
+ </body>
+</html>
