@@ -52,7 +52,7 @@ function sortLetter(charset, length){
     password = '';
     //  文字セット(charset)からランダムな文字をpasswordにセットしていく
   for (let i = 0; i < length; i++) {
-    password += charset[Math.floor(Math.random() * (charset.length - 1))];
+    password += charset[Math.floor(Math.random() * charset.length)];
   }
   //  continue; でwhile文の先頭に戻れるらしい
   //  小文字が含まれているか
